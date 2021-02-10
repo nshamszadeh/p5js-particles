@@ -39,7 +39,7 @@ class Particle {
 particles = new Array(1000);
 
 function setup() {
-  createCanvas(windowWidth - 15, windowHeight - 20);
+  createCanvas(windowWidth, windowHeight);
   for (let i = 0; i < particles.length; i++) {
     particles[i] = new Particle(random(width), random(height), random(-1,1), random(-1,1));
   }
@@ -51,5 +51,5 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth - 15, windowHeight - 20);
+  resizeCanvas(windowWidth, windowHeight);
 }
